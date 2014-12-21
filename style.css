@@ -1,0 +1,46 @@
+
+#main {
+  width: 800px;
+  margin: auto;
+}
+
+.searcher select {
+  vertical-align: top;
+}
+
+.label {
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+body, button, input, select, textarea {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.editor {
+  margin: 20px;
+  border: double black;
+}
+
+.searcher {
+  border: 1px solid black;
+}
+
+.console textarea {
+  font-family: "Lucida Console", Monaco, monospace;
+  display: block;
+}
+
+.console table {
+  border-collapse: collapse;
+}
+
+.console td {
+  border: 1px solid black;
+}
