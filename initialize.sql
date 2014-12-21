@@ -1,0 +1,24 @@
+
+CREATE DATABASE school;
+
+CREATE TABLE school.course (
+  id    INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  title VARCHAR(30)  NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE school.student (
+  id   INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30)  NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE school.mark (
+  id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  student_id INT UNSIGNED NOT NULL,
+  course_id  INT UNSIGNED NOT NULL,
+  score      INT UNSIGNED NOT NULL,
+  FOREIGN KEY (student_id) REFERENCES student(id) ON DELETE CASCADE,
+  FOREIGN KEY (course_id)  REFERENCES course(id)  ON DELETE CASCADE,
+  PRIMARY KEY (id)
+);
